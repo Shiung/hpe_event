@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>擎昊科技 - Nimble Storage實現所有你想要的</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- jquery -->
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+	<!-- tweenMax -->
+	<script type="text/javascript" src="libs/gsap/src/minified/TweenMax.min.js"></script>
+	<!--scrollmagic動畫-->
+    <script type="text/javascript" src="libs/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="libs/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+	<script type="text/javascript" src="libs/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+	
+	<!-- sweetalert.js -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<!-- user -->
+	<link rel="stylesheet" type="text/css" href="css/main.css"> 
+	<link rel="stylesheet" type="text/css" href="css/main-rwd.css"> 
+	<script src="javascript/main.js"></script>
+
+	<!-- vue -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+	<!-- reCAPTCHA -->
+	<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+	<!-- fontawesome	 -->
+	<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+	<link rel="Shortcut Icon" type="image/x-icon" href="image/favicon.png">
+
+  </head>
+<body>
+<header class="bg-white">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+			<div class="order-lg-3 order-1">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<!-- <span class="navbar-toggler-icon"></span> -->
+					<div class="menu-rwd">
+						<span class="line line-up"></span>
+						<span class="hb-line"></span>
+						<span class="line line-down"></span>
+					</div>
+				</button>
+				<a class="navbar-social" target="_blank" href="https://www.facebook.com/kinmaxofficial/?fref=ts"><img src="image/fb.png" class="img-fluid" alt=""></a>
+			</div>
+			
+			<a class="navbar-brand order-lg-1  order-2" target="_blank" href="https://www.kx.com.tw/"><img src="image/logo.png" class="img-fluid" alt=""></a>
+			<div class="collapse navbar-collapse order-lg-2  order-4" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#s2">Nimble Storage</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#s4">擎昊科技</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#s5">聯繫我們</a>
+					</li>
+				</ul>
+			</div>
+			<!-- <a class="navbar-social" href="#"><img src="image/fb.png" class="img-fluid" alt=""></a> -->
+			<a class="navbar-brand cursorNone order-lg-4  order-3" href="javascript:;"><img src="image/logo-hpe.png" class="img-fluid" alt=""></a>
+		</nav>
+	</div>	
+</header>
+<section id="s1">
+	<div class="container">
+		<h1 class="title font-weight-bold text-center">
+			Nimble Storage<br>實現所有你想要的
+		</h1>
+		<div class="pImg">
+			<img src="image/pImg.png" class="img-fluid" alt="">
+		</div>	
+	</div>	
+				
+</section>
+<section id="s2">
+	<div class="container">
+		<h1 class="title text-center">
+			Nimble Storage無可挑惕的高性能
+		</h1>
+		<div class="col-12 sp-area">
+			<div class="row">
+				<div class="col-2">
+					<div class="number">01</div>
+				</div>
+				<div class="col-10">
+					<div class="sp-content">
+						<h4 class="sp-title">比全快閃產品擁有更佳的成本效益</h4>
+						<p class="sp-descibe">讓整體持有成本相較於其他品牌的全快閃陣列可減少至65%。</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="col-12 sp-area">
+			<div class="row">
+				<div class="col-2">
+					<div class="number">02</div>
+				</div>
+				<div class="col-10">
+					<div class="sp-content">
+						<h4 class="sp-title">重複資料刪除與壓縮功能</h4>
+						<p class="sp-descibe">CASL的寫入機制能容易地讓Nimble Storage從SSD+硬碟的混合架構，轉移到全快閃架構，並提供當前全快閃儲存陣列不可或缺的重複資料刪除與壓縮功能。</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="col-12 sp-area">
+			<div class="row">
+				<div class="col-2">
+					<div class="number">03</div>
+				</div>
+				<div class="col-10">
+					<div class="sp-content">
+						<h4 class="sp-title">最佳作業穩定</h4>
+						<p class="sp-descibe">透過 InfoSight Predictive Analytics提供永不停頓的極高可用性，運轉率達99.9999%，軟硬體設計上完全無單一故障點。</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="tM3">
+			<h1 class="title text-center">Nimble Storage滿足一切所需</h1>
+			<div class="d-flex justify-content-between">
+				<div class="sp-support-box">
+					<div class="sp-support d-flex justify-content-center align-items-center">
+						<div>容許超大<br>容量SSD</div>
+					</div>
+				</div>
+
+				<div class="sp-support-box">
+					<div class="sp-support d-flex justify-content-center align-items-center">
+						<div>進階管理<br>功能支援</div>
+					</div>
+				</div>
+
+				<div class="sp-support-box">
+					<div class="sp-support d-flex justify-content-center align-items-center">
+						<div>結合InfoSight<br>雲端管理</div>
+					</div>
+				</div>			
+			</div>
+			<div class="pImg">
+				<img src="image/pImg2.png" class="img-fluid" alt="">
+			</div>
+		</div>
+		
+		
+	</div> 
+		
+</section>
+
+<section id="s3">
+	<div class="container">
+		<h1 class="title text-center">Nimble Storage<br>完整功能影片介紹</h1>
+		<div class="col-lg-8 offset-lg-2">
+			<div class="videoFather">
+				<div class="videoBox">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/KVhaToLERLo" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<section id="s4">
+	<div class="container">
+		<div class="col-12">
+			<div class="row" id="rwdFlexJs">
+				<div class="col-lg-4 text-center">
+					<img src="image/groupP.jpg" alt="" class="img-fluid">
+				</div>
+				<div class="col-lg-8">
+					<div class="bar text-center sp-title">IT / SI 專業信賴夥伴：擎昊科技</div>
+					<div class="group-content row">
+						擎昊科技成立至今已超過十五年，多年來持續為兩岸的中大型企業客戶提供專業的系統整合服務；自 Mission-Critical 的 Unix 系統開始，如今的擎昊已發展成為具備完整 IT 建置深度與廣度的專家團隊，客戶族群遍及半導體 / 高科技 / 製造業 / 資通訊 / 航運物流 / 金融 / 媒體⋯等領域，專業服務包含 Data Center / 機房維運 / 有線、無線網路與資安建置 / Database 管理與優化 / VDI 規劃與導入等環節。
+						<br><br>
+						我們不僅連續多年榮獲 HPE 全產品線在台灣最大的合作夥伴，更關注市場最新趨勢，投入下一階段的技術領域的培植，包括超融合架構，GPU 融合運算等面向，讓我們協助您，一同為下一個階段的 IT 維運打造扎實的基礎，持續達成 SMAP (Scalability, Manageability, Availability, Performance) 四項目標。
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="d-flex" id="rwdBtnJs">
+						<button class="gBtn flex-fill text-center" id="successShare">成功案例分享</button>
+						<button class="gBtn flex-fill text-center" id="productService">產品與服務</button>
+						<button class="gBtn flex-fill text-center" id="joinGrop">加入擎昊科技粉絲團</button>
+					</div>
+				</div>
+						
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="s5">
+	<div class="container">
+		<div class="form-area">
+			<div id="app" class="col-12">
+				<div class="row">
+					<div class="col-12 rwdContactTitle">
+						<h1 class="title font-weight-bold text-left pt-0 m-0">聯絡擎昊科技，<br>為企業獲得最佳IT服務方案</h1>
+					</div>
+					<div class="col-12 rwdContactContent">
+						<div class="form-content py-3">無論您有任何的資訊需求或疑問，歡迎填寫以下資料，我們將由專業成員與您聯繫，共創美好合作關係！</div>
+					</div>
+					
+
+					<div class="col-12 col-md-6">
+						<div class="form-group form-group-white" v-if="form[0].id == 'user'">
+							<div class="row">
+								<label class="col-form-label col-auto label-required" for="form_contact_name">姓名</label>
+								<div class="col">
+									<input type="text" class="form-control" name="username" id="form_contact_name" v-model="form[0].value" @keyup="valueCheck(form[0].id)">
+								</div>
+								<div class="col-12">
+									<div class="help-block" v-if="form[0].check == false && form[0].isKeyup == true">請輸入姓名</div>
+								</div>
+							</div>
+						</div>
+						 <div class="form-group form-group-white" v-if="form[4].id == 'area'">
+							<div class="row">
+								<label class="col-form-label col-auto" for="form_contact_location">公司地區</label>
+								<div class="col">
+									<select class="form-control" name="country" id="form_contact_location" v-model="form[4].value">
+										<option value="" selected="">請選擇縣市</option>
+										<option value="基隆市">基隆市</option>
+										<option value="臺北市">臺北市</option>
+										<option value="新北市">新北市</option>
+										<option value="桃園市">桃園市</option>
+										<option value="新竹市">新竹市</option>
+										<option value="新竹縣">新竹縣</option>
+										<option value="苗栗縣">苗栗縣</option>
+										<option value="臺中市">臺中市</option>
+										<option value="彰化縣">彰化縣</option>
+										<option value="南投縣">南投縣</option>
+										<option value="雲林縣">雲林縣</option>
+										<option value="嘉義市">嘉義市</option>
+										<option value="嘉義縣">嘉義縣</option>
+										<option value="臺南市">臺南市</option>
+										<option value="高雄市">高雄市</option>
+										<option value="屏東縣">屏東縣</option>
+										<option value="臺東縣">臺東縣</option>
+										<option value="花蓮縣">花蓮縣</option>
+										<option value="宜蘭縣">宜蘭縣</option>
+										<option value="澎湖縣">澎湖縣</option>
+										<option value="金門縣">金門縣</option>
+										<option value="連江縣">連江縣</option>
+									</select>
+								</div>	
+							</div>
+						</div>
+						<div class="form-group form-group-white" v-if="form[2].id == 'company'">
+							<div class="row">
+								<label class="col-form-label col-auto label-required" for="form_contact_company">公司名稱</label>
+								<div class="col">
+									<input type="text" class="form-control" name="company" id="form_contact_company" v-model="form[2].value"  @keyup="valueCheck(form[2].id)">
+								</div>
+								<div class="col-12">
+									<div class="help-block" v-if="form[2].check == false && form[2].isKeyup == true">請輸入公司名稱</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6" v-if="form[3].id == 'tel'">
+						<div class="form-group form-group-white">
+							<div class="row">
+								<label class="col-form-label col-auto label-required" for="form_contact_phone">聯絡電話</label>
+								<div class="col">
+									<input type="tel" class="form-control" name="phone" id="form_contact_phone" v-model="form[3].value"  @keyup="valueCheck(form[3].id)">
+								</div>
+								<div class="col-12">
+									<div class="help-block" v-if="form[3].check == false && form[3].isKeyup == true">請輸入聯絡電話</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group form-group-white" v-if="form[1].id == 'mail'">
+							<div class="row">
+								<label class="col-form-label col-auto label-required" for="form_contact_email">Email</label>
+								<div class="col">
+									<input type="text" class="form-control" name="email" id="form_contact_email" v-model="form[1].value" @keyup="valueCheck(form[1].id)">
+								</div>
+								<div class="col-12">
+									<div class="help-block" v-if="form[1].check == false && form[1].isKeyup == true">請輸入Email格式</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row pt-2 pb-2">
+								<div class="col-12 rwdFancy">
+									<button class="fancybox" data-toggle="modal" data-target="#exampleModal3">
+										<i class="fas fa-plus-circle"></i>&nbsp;個資法聲明
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 d-flex justify-content-center pb-3">
+						<div class="form-check row">
+							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1"  v-model="isFancyCheck">
+							<label class="form-check-label" for="defaultCheck1">
+								我已詳細閱讀並同意相關注意事項
+							</label>
+						</div>
+					</div>
+
+					<div class="col-12 d-flex justify-content-center my-2">
+							<!-- reCaptcha -->
+							<!-- <div class="g-recaptcha" data-sitekey="6LfFEl8UAAAAAMkm8zZFanVY-pycg0dm75ESKweD"></div>
+							<noscript>
+							<div>
+								<div style="width: 302px; height: 422px; position: relative;">
+									<div style="width: 302px; height: 422px; position: absolute;">
+										<iframe src="https://www.google.com/recaptcha/api/fallback?k=6LfFEl8UAAAAAMkm8zZFanVY-pycg0dm75ESKweD"
+												frameborder="0" scrolling="no"
+												style="width: 302px; height:422px; border-style: none;">
+										</iframe>
+									</div>
+								</div>
+									<div style="width: 300px; height: 60px; border-style: none;
+												bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
+												background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+									<textarea id="g-recaptcha-response" name="g-recaptcha-response"
+												class="g-recaptcha-response"
+												style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
+														margin: 10px 25px; padding: 0px; resize: none;" >
+									</textarea>
+								</div>
+							</div>
+							</noscript> -->
+							<!-- reCaptcha -->
+							<div id="g-recaptcha"></div>
+							
+						</div>
+
+
+					<div class="col-12 d-flex justify-content-center">
+						<button class="gBtn text-center" :class="{'hover': isTrigger}" @mouseenter="isTrigger = true"  @mouseleave="isTrigger = false" @click="send()">送出</button>
+					</div>
+
+				</div>		
+			</div> <!-- end #app -->
+			<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+		</div>	
+	</div>		
+</section>	
+
+<!-- gotop -->
+<div class="gotop">
+  	<i class="fas fa-angle-up fa-2x"></i>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="col-12 d-flex justify-content-between" id="rwdFooterJs">
+			<div class="brand-footer">
+				<a class="navbar-brand" target="_blank" href="https://www.kx.com.tw/"><img src="image/logo.png" class="img-fluid" alt=""></a>
+				<a class="navbar-brand cursorNone" href="javascript:;"><img src="image/logo-hpe.png" class="img-fluid" alt=""></a>			
+			</div>
+			<div class="copyright d-flex align-items-center">
+			Copyright &copy; 2018 擎昊科技 著作權所有，並保留一切權利。
+			</div>
+		</div>	
+	</div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModal3Label">個資法聲明</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  		<div class="modal-body-content mb-2">
+			  	本網頁為擎昊科技所有，為保護您的個人資料，依據個資保護法規定，下列事由與目的範圍內，說明本公司直接或間接蒐集、處理即利用您的個人資料，當您填表完成，表示您同意以下內容：
+		  	</div> 
+	  
+			<ol>
+				<li>蒐集之目的：本公司基於個資保護法即相關法令之規定，於本網站取得您的個人資料，為進行客戶 
+					管理、統計分析，寄發活動或產品行銷資訊，或依法律明文規定於必要時使用您的個人資料，蒐集  
+					者透過填寫問卷方式蒐集您的個人資料。
+				</li>
+				<li>個人資料之類別：包含姓名、聯絡方式(地址、電話、email)、公司與職務，以您提供之資料為準。</li>
+				<li>您同意本公司以電話、簡訊、電子郵件、紙本或其他合於當時科技之適當方式作個人資料之利用，
+					包括：業務/行銷：寄發活動資訊、產品資訊與服務等給當事人。
+				</li>
+				<li>依據個資法第3條規定，您可向公司行使之個資權利包括：查詢、閱覽、複製、補充、更正、處 
+					理、利用及刪除。若有個人資料使用相關問題，請聯絡擎昊科技customer@kx.com.tw，並註明您的
+					姓名與公司名稱，我們將在相關法令許可之範圍集合理期間內依您的要求進行處理。
+				</li>
+				<li>本公司利用個人資料行銷，您表示拒絕接受行銷時，於法定合理期間本公司即不得以行銷之名義利</li>
+			</ol>				
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	 fbq('init', '383020002209026'); 
+	fbq('track', 'PageView');
+	</script>
+	<noscript>
+	 <img height="1" width="1" 
+	src="https://www.facebook.com/tr?id=383020002209026&ev=PageView
+	&noscript=1"/>
+	</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97477245-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-97477245-4');
+</script>
+
+
+
+</body>  
+</html>
