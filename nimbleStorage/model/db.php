@@ -2,10 +2,8 @@
 // DB
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
-// define('DB_USERNAME', 'kxeventweb'); //root
-// define('DB_PASSWORD', 'yNGy7da7TCtm24Xw'); //root
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'root');
+define('DB_USERNAME', 'kxeventweb'); //root
+define('DB_PASSWORD', 'yNGy7da7TCtm24Xw'); //root
 define('DB_DATABASE', 'web_kxevent');
 define('DB_PORT', '3306');
 /** 建立資料表時預設的文字編碼 */
