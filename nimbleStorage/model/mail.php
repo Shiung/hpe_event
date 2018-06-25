@@ -11,10 +11,10 @@ class Mail extends PHPMailer{
 		$this->Port = 465; //設定SMTP埠位，預設為25埠  
 		$this->CharSet = "utf8"; //設定郵件編碼   
 		 
-		$this->Username = "shiungneplus@gmail.com"; //設定驗證帳號   
-		$this->Password = "Njack123"; //設定驗證密碼 
+		$this->Username = "kinmax.event@gmail.com"; //設定驗證帳號   
+		$this->Password = "KXsharon888"; //設定驗證密碼 
 
-		$this->From = "shiungneplus@gmail.com"; //設定寄件者信箱   
+		$this->From = "customer@kx.com.tw"; //設定寄件者信箱   
 		$this->FromName = "擎昊科技"; //設定寄件者姓名 
 
 		$this->WordWrap = 20; //每50行斷一次行
@@ -29,10 +29,10 @@ class Mail extends PHPMailer{
 		$content = sprintf('<p>擎昊科技 - Nimble Storage 新註冊客戶：<span></span></p><p>姓名：<span>%s</span></p><p>公司：<span>%s</span></p><p>Email：<span>%s</span></p><p>電話：<span>%s</span></p>',$recipientName,$company,$recipient,$telephone);
 		$this->Body = $content; //設定郵件內容 
 
-		$this->AddAddress("jack@ne-plus.com", "Jack"); //設定收件者郵件及名稱  
-		// $this->AddBCC('sharon@indextw.com', 'Sharon'); // 密件副本
-		// $this->AddBCC('avy@kx.com.tw', 'Avy'); // 密件副本
-		// $this->AddBCC('joe.hung@tgilive.com', 'Joe'); // 密件副本
+		$this->AddAddress("ekx@kx.com.tw", ""); //設定收件者郵件及名稱 
+		$this->AddBCC('sharon@indextw.com', 'Sharon'); // 密件副本
+		$this->AddBCC('avy@kx.com.tw', 'Avy'); // 密件副本
+		$this->AddBCC('joe.hung@tgilive.com', 'Joe'); // 密件副本
 
 		//信件寄送
 		if(!$this->Send()) {   

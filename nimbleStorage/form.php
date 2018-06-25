@@ -27,7 +27,7 @@ if( isset($_REQUEST['user']) ){
 
     // send mail by phpMailer
     $mail = new Mail();
-    $title = "測試標題擎昊科技mail";
+    $title = "擎昊科技新註冊廠商通知";
     $content = "恭喜你註冊成功";
     // $recipient = "jack@ne-plus.com"; //傳送地址
     // $recipientName = "熊XX";
