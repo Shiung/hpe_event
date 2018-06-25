@@ -168,7 +168,7 @@ $(document).ready(function(){
                 {id : "mail" ,  value : "" , check : false , isKeyup : false},
                 {id : "company" , value : "" , check : false , isKeyup : false},
                 {id : "tel" , value : "" , check : false , isKeyup : false},
-                {id : "area" , value : "" , check : true, isKeyup : true},
+                {id : "area" , value : "" , check : false, isKeyup : false},
             ],
             isTrigger : false, 
             isFancyCheck : false, 
@@ -208,6 +208,14 @@ $(document).ready(function(){
                             vm.form[2].check = true;
                         }else{
                             vm.form[2].check = false;
+                        }
+                    break;
+                    case 'area' :
+                        vm.form[4].isKeyup = true;
+                        if( vm.form[4].value.trim() != '' ){
+                            vm.form[4].check = true;
+                        }else{
+                            vm.form[4].check = false;
                         }
                     break;
                     default :
