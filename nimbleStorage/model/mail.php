@@ -26,7 +26,7 @@ class Mail extends PHPMailer{
 		$this->Subject = sprintf("%s",$title); //設定郵件標題
 
 		//設定信件內容
-		$content = sprintf('<p>擎昊科技 - Nimble Storage 新註冊客戶：<span></span></p><p>姓名：<span>%s</span></p><p>公司：<span>%s</span></p><p>Email：<span>%s</span></p><p>電話：<span>%s</span></p>',$recipientName,$company,$recipient,$telephone);
+		$content = sprintf('<p>擎昊科技Nimble Storage 網頁來信通知<span></span></p><p>姓名：<span>%s</span></p><p>公司：<span>%s</span></p><p>Email：<span>%s</span></p><p>電話：<span>%s</span></p>',$recipientName,$company,$recipient,$telephone);
 		$this->Body = $content; //設定郵件內容 
 
 		$this->AddAddress("ekx@kx.com.tw", ""); //設定收件者郵件及名稱 
